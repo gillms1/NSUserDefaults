@@ -1,18 +1,18 @@
 //
-//  MSGViewController.m
+//  MSGCreateAccountViewController.m
 //  NSUserDefaults, Segues and Protocols Challenge Solution
 //
 //  Created by Sunny on 19/07/2014.
 //  Copyright (c) 2014 Sunny. All rights reserved.
 //
 
-#import "MSGViewController.h"
+#import "MSGCreateAccountViewController.h"
 
-@interface MSGViewController ()
+@interface MSGCreateAccountViewController ()
 
 @end
 
-@implementation MSGViewController
+@implementation MSGCreateAccountViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,4 +46,6 @@
 }
 */
 
+- (IBAction)createButtonPressed:(UIButton *)sender {
+}
 @end

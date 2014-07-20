@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MSGViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIView *viewController;
+@property (strong, nonatomic) IBOutlet UILabel *viewControllerLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *viewControllerLabel2;
 
 @end

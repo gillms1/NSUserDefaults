@@ -14,13 +14,16 @@
 		A330EC9C1979E29800462A94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A330EC9B1979E29800462A94 /* main.m */; };
 		A330ECA01979E29800462A94 /* MSGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A330EC9F1979E29800462A94 /* MSGAppDelegate.m */; };
 		A330ECA31979E29800462A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A330ECA11979E29800462A94 /* Main.storyboard */; };
-		A330ECA61979E29800462A94 /* MSGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A330ECA51979E29800462A94 /* MSGViewController.m */; };
 		A330ECA81979E29800462A94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A330ECA71979E29800462A94 /* Images.xcassets */; };
 		A330ECAF1979E29800462A94 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A330ECAE1979E29800462A94 /* XCTest.framework */; };
 		A330ECB01979E29800462A94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A330EC8F1979E29800462A94 /* Foundation.framework */; };
 		A330ECB11979E29800462A94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A330EC931979E29800462A94 /* UIKit.framework */; };
 		A330ECB91979E29800462A94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A330ECB71979E29800462A94 /* InfoPlist.strings */; };
 		A330ECBB1979E29800462A94 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A330ECBA1979E29800462A94 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m */; };
+		A330ECC61979E2F700462A94 /* MSGSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A330ECC51979E2F700462A94 /* MSGSignInViewController.m */; };
+		A330ECC91979E30E00462A94 /* MSGCreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A330ECC81979E30E00462A94 /* MSGCreateAccountViewController.m */; };
+		A330ECCC1979E47A00462A94 /* MSGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A330ECCB1979E47A00462A94 /* MSGViewController.m */; };
+		A330ECD21979EDF200462A94 /* wallpaper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A330ECD11979EDF200462A94 /* wallpaper@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,19 @@
 		A330EC9E1979E29800462A94 /* MSGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSGAppDelegate.h; sourceTree = "<group>"; };
 		A330EC9F1979E29800462A94 /* MSGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSGAppDelegate.m; sourceTree = "<group>"; };
 		A330ECA21979E29800462A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A330ECA41979E29800462A94 /* MSGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSGViewController.h; sourceTree = "<group>"; };
-		A330ECA51979E29800462A94 /* MSGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSGViewController.m; sourceTree = "<group>"; };
 		A330ECA71979E29800462A94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A330ECAD1979E29800462A94 /* NSUserDefaults, Segues and Protocols Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSUserDefaults, Segues and Protocols Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A330ECAE1979E29800462A94 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A330ECB61979E29800462A94 /* NSUserDefaults, Segues and Protocols Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSUserDefaults, Segues and Protocols Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		A330ECB81979E29800462A94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A330ECBA1979E29800462A94 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		A330ECC41979E2F700462A94 /* MSGSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGSignInViewController.h; sourceTree = "<group>"; };
+		A330ECC51979E2F700462A94 /* MSGSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGSignInViewController.m; sourceTree = "<group>"; };
+		A330ECC71979E30E00462A94 /* MSGCreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGCreateAccountViewController.h; sourceTree = "<group>"; };
+		A330ECC81979E30E00462A94 /* MSGCreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGCreateAccountViewController.m; sourceTree = "<group>"; };
+		A330ECCA1979E47A00462A94 /* MSGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGViewController.h; sourceTree = "<group>"; };
+		A330ECCB1979E47A00462A94 /* MSGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGViewController.m; sourceTree = "<group>"; };
+		A330ECD11979EDF200462A94 /* wallpaper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallpaper@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +123,12 @@
 				A330EC9E1979E29800462A94 /* MSGAppDelegate.h */,
 				A330EC9F1979E29800462A94 /* MSGAppDelegate.m */,
 				A330ECA11979E29800462A94 /* Main.storyboard */,
-				A330ECA41979E29800462A94 /* MSGViewController.h */,
-				A330ECA51979E29800462A94 /* MSGViewController.m */,
+				A330ECCA1979E47A00462A94 /* MSGViewController.h */,
+				A330ECCB1979E47A00462A94 /* MSGViewController.m */,
+				A330ECC41979E2F700462A94 /* MSGSignInViewController.h */,
+				A330ECC51979E2F700462A94 /* MSGSignInViewController.m */,
+				A330ECC71979E30E00462A94 /* MSGCreateAccountViewController.h */,
+				A330ECC81979E30E00462A94 /* MSGCreateAccountViewController.m */,
 				A330ECA71979E29800462A94 /* Images.xcassets */,
 				A330EC961979E29800462A94 /* Supporting Files */,
 			);
@@ -126,6 +138,7 @@
 		A330EC961979E29800462A94 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A330ECD11979EDF200462A94 /* wallpaper@2x.png */,
 				A330EC971979E29800462A94 /* NSUserDefaults, Segues and Protocols Challenge Solution-Info.plist */,
 				A330EC981979E29800462A94 /* InfoPlist.strings */,
 				A330EC9B1979E29800462A94 /* main.m */,
@@ -232,6 +245,7 @@
 				A330ECA81979E29800462A94 /* Images.xcassets in Resources */,
 				A330EC9A1979E29800462A94 /* InfoPlist.strings in Resources */,
 				A330ECA31979E29800462A94 /* Main.storyboard in Resources */,
+				A330ECD21979EDF200462A94 /* wallpaper@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A330ECC91979E30E00462A94 /* MSGCreateAccountViewController.m in Sources */,
+				A330ECC61979E2F700462A94 /* MSGSignInViewController.m in Sources */,
 				A330ECA01979E29800462A94 /* MSGAppDelegate.m in Sources */,
 				A330EC9C1979E29800462A94 /* main.m in Sources */,
-				A330ECA61979E29800462A94 /* MSGViewController.m in Sources */,
+				A330ECCC1979E47A00462A94 /* MSGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,18 @@
 //
-//  MSGViewController.m
+//  MSGSignInViewController.m
 //  NSUserDefaults, Segues and Protocols Challenge Solution
 //
 //  Created by Sunny on 19/07/2014.
 //  Copyright (c) 2014 Sunny. All rights reserved.
 //
 
-#import "MSGViewController.h"
+#import "MSGSignInViewController.h"
 
-@interface MSGViewController ()
+@interface MSGSignInViewController ()
 
 @end
 
-@implementation MSGViewController
+@implementation MSGSignInViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"wallpaper@2x.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,4 +52,18 @@
 }
 */
 
+- (IBAction)createAccountBarButtonPressed:(UIBarButtonItem *)sender {
+    [self performSegueWithIdentifier:@"toCreateAccountViewController" sender:sender];
+    
+}
+- (IBAction)loginButtonPressed:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"toViewController" sender:sender];
+}
+
+
+
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    NSLog(@"performSegueWithIdentifier");
+}
 @end
