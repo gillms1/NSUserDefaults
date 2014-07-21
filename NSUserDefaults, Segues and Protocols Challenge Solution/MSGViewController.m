@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.viewControllerLabel1.text = self.username;
+    self.viewControllerLabel2.text = self.password;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,4 +49,8 @@
 }
 */
 
+- (IBAction)pressedCloseButton:(UIButton *)sender {
+    
+    [self.delegate pressedClose];
+}
 @end

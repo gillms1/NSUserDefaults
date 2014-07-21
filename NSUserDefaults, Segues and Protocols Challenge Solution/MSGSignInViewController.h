@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSGCreateAccountViewController.h"
+#import "MSGViewController.h"
 
-@interface MSGSignInViewController : UIViewController
+@interface MSGSignInViewController : UIViewController <MSGCreateAccountViewControllerDelegate, MSGViewControllerDelegate>
+
 - (IBAction)createAccountBarButtonPressed:(UIBarButtonItem *)sender;
+- (IBAction)loginButtonPressed:(UIButton *)sender;
+
 @property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
-- (IBAction)loginButtonPressed:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *loginButton;
+
 
 @end

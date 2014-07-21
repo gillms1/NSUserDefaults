@@ -23,7 +23,7 @@
 		A330ECC61979E2F700462A94 /* MSGSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A330ECC51979E2F700462A94 /* MSGSignInViewController.m */; };
 		A330ECC91979E30E00462A94 /* MSGCreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A330ECC81979E30E00462A94 /* MSGCreateAccountViewController.m */; };
 		A330ECCC1979E47A00462A94 /* MSGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A330ECCB1979E47A00462A94 /* MSGViewController.m */; };
-		A330ECD21979EDF200462A94 /* wallpaper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A330ECD11979EDF200462A94 /* wallpaper@2x.png */; };
+		A34E74A8197D1C9C006581C7 /* wallpaper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34E74A7197D1C9C006581C7 /* wallpaper@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,7 @@
 		A330ECC81979E30E00462A94 /* MSGCreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGCreateAccountViewController.m; sourceTree = "<group>"; };
 		A330ECCA1979E47A00462A94 /* MSGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGViewController.h; sourceTree = "<group>"; };
 		A330ECCB1979E47A00462A94 /* MSGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGViewController.m; sourceTree = "<group>"; };
-		A330ECD11979EDF200462A94 /* wallpaper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wallpaper@2x.png"; sourceTree = "<group>"; };
+		A34E74A7197D1C9C006581C7 /* wallpaper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallpaper@2x.png"; path = "Images.xcassets/Image.imageset/wallpaper@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 		A330EC961979E29800462A94 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A330ECD11979EDF200462A94 /* wallpaper@2x.png */,
+				A34E74A7197D1C9C006581C7 /* wallpaper@2x.png */,
 				A330EC971979E29800462A94 /* NSUserDefaults, Segues and Protocols Challenge Solution-Info.plist */,
 				A330EC981979E29800462A94 /* InfoPlist.strings */,
 				A330EC9B1979E29800462A94 /* main.m */,
@@ -244,8 +244,8 @@
 			files = (
 				A330ECA81979E29800462A94 /* Images.xcassets in Resources */,
 				A330EC9A1979E29800462A94 /* InfoPlist.strings in Resources */,
+				A34E74A8197D1C9C006581C7 /* wallpaper@2x.png in Resources */,
 				A330ECA31979E29800462A94 /* Main.storyboard in Resources */,
-				A330ECD21979EDF200462A94 /* wallpaper@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +473,7 @@
 				A330ECC01979E29800462A94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A330ECC11979E29800462A94 /* Build configuration list for PBXNativeTarget "NSUserDefaults, Segues and Protocols Challenge SolutionTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +482,7 @@
 				A330ECC31979E29800462A94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

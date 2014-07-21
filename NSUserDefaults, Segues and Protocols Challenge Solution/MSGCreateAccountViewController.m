@@ -47,5 +47,25 @@
 */
 
 - (IBAction)createButtonPressed:(UIButton *)sender {
+    
+    if (self.userNameTextField.text.length > 0 && self.passwordTextField.text.length > 0 && self.confirmPasswordTextField.text.length > 0) {
+        [[NSUserDefaults standardUserDefaults] setObject:self.userNameTextField.text forKey:USER_NAME];
+        [[NSUserDefaults standardUserDefaults] setObject:self.passwordTextField.text forKey:PASSWORD];
+    
+        [self.delegate didCancel];
+        
+    } else if (![self.passwordTextField.text isEqualToString:self.confirmPasswordTextField.text]) {
+        UIAlertView *pwordMisMatchAlert = [[UIAlertView alloc]initWithTitle:@"Password Mismatch" message:@"Please make sure your password & confirmation passoword are the same" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [pwordMisMatchAlert show];
+    } else {
+        UIAlertView *emptyFieldAlert = [[UIAlertView alloc]initWithTitle:@"Empty Field" message:@"Please ensure you fill in all fields" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [emptyFieldAlert show];
+    }
 }
+
+- (IBAction)cancelButtonPressed:(UIButton *)sender {
+    [self.delegate didCancel];
+}
+
+
 @end

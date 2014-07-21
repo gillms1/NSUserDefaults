@@ -7,6 +7,8 @@
 //
 
 #import "MSGSignInViewController.h"
+#import "MSGViewController.h"
+
 
 @interface MSGSignInViewController ()
 
@@ -33,6 +35,9 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
+    [self.loginButton.titleLabel setTextColor:[UIColor whiteColor]];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,13 +62,51 @@
     
 }
 - (IBAction)loginButtonPressed:(UIButton *)sender {
-    [self performSegueWithIdentifier:@"toViewController" sender:sender];
+    
+    NSString *savedUsername = [[NSUserDefaults standardUserDefaults]objectForKey:USER_NAME];
+    NSString *savedPassword = [[NSUserDefaults standardUserDefaults]objectForKey:PASSWORD];
+    
+    if ([self.userNameTextField.text isEqualToString:savedUsername] && [self.passwordTextField.text isEqualToString:savedPassword] ) {
+        [self performSegueWithIdentifier:@"toViewController" sender:sender];
+    } else {
+        UIAlertView *loginFailAlert = [[UIAlertView alloc]initWithTitle:@"Login Failed" message:@"Please enter a valid username or password" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [loginFailAlert show];
+    }
+    
+    
 }
 
 
 
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"performSegueWithIdentifier");
+
+    if ([segue.destinationViewController isKindOfClass:[MSGCreateAccountViewController class]]) {
+        NSLog(@"setting delegate for MSGCreateAccountViewController");
+        MSGCreateAccountViewController *createAccountVC = segue.destinationViewController;
+        createAccountVC.delegate = self;
+    } else if ([segue.destinationViewController isKindOfClass:[MSGViewController class]]) {
+        MSGViewController *mainVC = segue.destinationViewController;
+        mainVC.username = [[NSUserDefaults standardUserDefaults]objectForKey:USER_NAME];
+        mainVC.password = [[NSUserDefaults standardUserDefaults]objectForKey:PASSWORD];
+        mainVC.delegate = self;
+    }
+
+    
 }
+
+- (void)didCancel
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)didCreateAccount
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)pressedClose{
+     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
