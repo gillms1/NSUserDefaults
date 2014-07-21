@@ -51,6 +51,7 @@
     if (self.userNameTextField.text.length > 0 && self.passwordTextField.text.length > 0 && self.confirmPasswordTextField.text.length > 0) {
         [[NSUserDefaults standardUserDefaults] setObject:self.userNameTextField.text forKey:USER_NAME];
         [[NSUserDefaults standardUserDefaults] setObject:self.passwordTextField.text forKey:PASSWORD];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     
         [self.delegate didCancel];
         
